@@ -1,0 +1,126 @@
+@font-face {
+  font-family: avenir-light;
+  src: url('fonts/Avenir-Light.ttf');
+}
+
+@font-face {
+  font-family: avenir-black;
+  src: url('fonts/Avenir-Black.ttf');
+}
+
+@font-face {
+  font-family: a-love-of-thunder;
+  src: url('../fonts/A Love of Thunder.ttf')
+}
+
+body {
+  position: relative;
+  margin: 0px 0px 0px 0px;
+  padding: 20px 0px 50px 0px;
+  color: #2e282a;
+  background: #efe7d1;
+  background-color: #efe7d1;
+  font-family: a-love-of-thunder, Arial, Helvetica, sans-serif;
+}
+
+.paperOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: repeat;
+  background-image: url("../images/textured-paper.png");
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0px 0px 0px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 75%;
+  padding: 10px 0px 10px 0px;
+  /* border: 5px solid black; */
+}
+
+.row > div {
+  margin: 0px 10px 0px 10px;
+  padding: 40px 10px 40px 10px;
+  justify-content: center;
+}
+
+
+.address {
+  min-width: 250px;
+  text-align: center;
+  background-color: #dd6232;
+  /* transform: skew(3deg) rotate(1deg); */
+}
+
+.address>b {
+  font-size: 20.5px;
+}
+
+.address>i {
+  font-size: 13.5px;
+}
+
+.title {
+  font-size: 35px;
+  min-width: 350px;
+  padding: 0px;
+  margin: 0px;
+  height: fit-content;
+  border: 0px solid #002700;
+  text-align: center;
+  background-color: #dd6232;
+  text-shadow: 2px 3px 1px #f5f0e5;
+  /* border: 5px solid black; */
+  padding: 20px 10px 20px 10px;
+  /* transform: skew(3deg) rotate(-1deg); */
+
+}
+
+.jazz {
+  font-size: 120px;
+  line-height: 100px;
+  /* transform: rotate(3deg); */
+}
+
+.bandimage {
+  min-width: 350px;
+  height: 350px;
+  content: url("../images/esrk3bw.jpg");
+  object-fit: cover;
+  /* transform: rotate(3deg); */
+}
+
+.upcomingShows {
+  font-size: 24px;
+  /* padding: 50px 0px 0px 0px; */
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  /* margin: 20px 50px 20px 50px; */
+  /* transform: skew(-2deg) rotate(1deg); */
+}
+
+.event {
+    min-width: 250px;
+    height: 175px;
+    text-align: center;
+}
+
+.event > div {
+  background-color: #dd6232;
+}

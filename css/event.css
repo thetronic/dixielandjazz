@@ -1,0 +1,36 @@
+.event {
+  display: flex;
+  flex-direction: row;
+}
+
+.event > * {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 10px 5px 10px;
+  margin: 5px 0px 0px 0px;
+  text-align: left;
+  min-width: 80px;
+  background-color: aliceblue;
+  align-items: center;
+  text-align: center;
+}
+
+.eventDate {
+  font-weight: bold;
+}
+
+.eventDescription {
+  text-align: left;
+}
+
+.eventName {
+  min-width: 150px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.eventImage {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+}
