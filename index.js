@@ -1,6 +1,6 @@
 var spreadsheetID = '1ejkbveN8ByG3Bk7lKAmiQ4rTMQ922QjbzhJ8g0cWhfY'
 var tabName = 'Sheet1'
-var apiKey = process.env.API_KEY //FIX THIS TO BE SAFE!!!
+var apiKey = 'AIzaSyBny4imxdqvCz-D4RwDy_Ruk2ENPUK_2CQ'
 var url =
   'https://sheets.googleapis.com/v4/spreadsheets/' +
   spreadsheetID +
