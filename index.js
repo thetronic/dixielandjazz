@@ -179,6 +179,7 @@ function formatDate(input) {
     ' ' +
     monthNames[date.getMonth()] +
     ' ' +
+    '<br>' +
     date.getFullYear()
 
   return formattedDate
