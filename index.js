@@ -82,14 +82,17 @@ function convertToEventObject(event) {
 function createEventCard(event) {
   const eventCard = document.createElement('div')
 
+  const eventName = document.createElement('div')
   const eventDate = document.createElement('div')
   const eventTime = document.createElement('div')
-  const eventName = document.createElement('div')
 
   eventCard.className = 'event'
+  eventName.className = 'eventName'
   eventDate.className = 'eventDate'
   eventTime.className = 'eventTime'
-  eventName.className = 'eventName'
+
+  eventName.innerHTML = '<b>' + event['performer'].toUpperCase() + '</b>'
+  eventCard.appendChild(eventName)
 
   eventDate.innerHTML = formatDate(event['date'])
   eventCard.appendChild(eventDate)
@@ -97,8 +100,6 @@ function createEventCard(event) {
   eventTime.innerHTML = event['time']
   eventCard.appendChild(eventTime)
 
-  eventName.innerHTML = event['performer']
-  eventCard.appendChild(eventName)
   return eventCard
 }
 
@@ -114,7 +115,7 @@ function createEventSchema(event) {
     endDate: '',
     performer: {
       '@type': 'Organization',
-      name: 'The Eastside Rhythm Kings',
+      name: event['name'],
       url: 'http://www.dixieland.co.uk',
     },
     location: {
