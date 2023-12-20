@@ -55,6 +55,8 @@ function updatePage(jsonEvents) {
 
   const limitedEvents = getFirstPastToday(allEvents, 2)
 
+  console.log('Limited Events: ', limitedEvents)
+
   var allEventSchema = []
 
   limitedEvents.forEach((event) => {
@@ -209,9 +211,18 @@ function getFirstPastToday(arr, limit) {
   let today = new Date()
   today.setHours(0, 0, 0, 0)
 
+  console.log(today)
+
   // Filter the array for dates past today
   let filteredArr = arr.filter((item) => {
-    let itemDate = new Date(item['date'])
+    const dateString = item['date']
+    console.log(dateString)
+    var dateParts = dateString.split('/')
+    // month is 0-based, that's why we need dataParts[1] - 1
+    var itemDate = new Date(+dateParts[2], dateParts[1] - 1, +dateParts[0])
+    // console.log(dateObject)
+    // let itemDate = new Date(item['date'])
+    console.log(itemDate)
     return itemDate > today
   })
 

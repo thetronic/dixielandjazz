@@ -1,3 +1,2 @@
 User-agent: *
 Disallow: /index-original.html
-Disallow: /index-redesign.html
