@@ -10,14 +10,14 @@
 
 @font-face {
   font-family: a-love-of-thunder;
-  src: url('../fonts/A Love of Thunder.ttf')
+  src: url('../fonts/A Love of Thunder.ttf');
 }
 
 body {
   background-color: #262626;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   /* Titles and accents */
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   /* General text */
   color: #f8f8f8;
   margin: 0;
@@ -30,8 +30,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 5px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-
-  /* Replace with geometric pattern background if desired */
 }
 
 .jazz {
@@ -49,10 +47,9 @@ body {
   height: 400px;
   margin-top: 15px;
   color: #262626;
-  background-image: url("../images/esrk2.jpg");
+  background-image: url('../images/esrk2.jpg');
   background-size: cover;
   background-position: center;
-  /* Optional Art Deco pattern overlay */
 }
 
 #address {
@@ -60,11 +57,17 @@ body {
   font-size: 30px;
   line-height: 1.2;
   margin: 20px;
-  /* Optional Art Deco pattern overlay */
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-#address > a > b {
-  color: #ffc536
+#address > a > div {
+  display: inline;
+  white-space: nowrap;
+}
+
+#address > a > div > b {
+  color: #ffc536;
 }
 
 hr {
@@ -99,17 +102,17 @@ hr {
   font-weight: bold;
   text-align: center;
   margin-bottom: 5px;
-  color: #ffc536 /*#f07818 #fc9e03 #facc2e #e69138 #27ae60 #4db6ac #3498db #2ecc71 #9b59b6*/
+  color: #ffc536; /*#f07818 #fc9e03 #facc2e #e69138 #27ae60 #4db6ac #3498db #2ecc71 #9b59b6*/
 }
 
 .eventFooter {
   font-size: 20px;
-    text-align: center;
-    margin: 10px;
+  text-align: center;
+  margin: 10px;
 }
 
 .eventFooter > b {
-  color: #ffc536
+  color: #ffc536;
 }
 
 a {
@@ -121,10 +124,38 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.iframe {
   border: 0px solid #ddd;
-  padding: 80px;
 }
 
+iframe {
+  border: 0px solid #ddd;
+  padding: 80px 0px 80px 0px;
+  width: 568px;
+  height: 320px;
+}
+
+@media (max-width: 568px) {
+  iframe {
+    padding: 80px 0px 80px 0px;
+    width: 320px;
+    height: 180px;
+  }
+  #title {
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  #bandImage {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+    height: 250px;
+    margin-top: 15px;
+    color: #262626;
+    background-image: url('../images/esrk2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}
