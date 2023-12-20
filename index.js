@@ -22,7 +22,6 @@ request.onload = function () {
   if (this.readyState === 4 && this.status === 200) {
     // Request successful, parse JSON response and handle data
     var googleSheetsJSON = JSON.parse(this.responseText)
-    console.log(this.responseText)
     handleLoad(googleSheetsJSON)
   } else {
     // Request failed, retry up to 10 times
