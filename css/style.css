@@ -33,6 +33,11 @@ body {
   margin: 20px 0px 30px 0px;
 }
 
+.live {
+  font-weight: bold;
+  margin: 0px 0px 10px 0px;
+}
+
 .jazz {
   color: #ffc536;
   font-weight: bold;
@@ -129,6 +134,7 @@ a {
 .about {
   max-width: 400px;
   margin: 0px 0px 80px 0px;
+  text-align: justify;
 }
 
 .musicians {
@@ -160,15 +166,22 @@ a {
 iframe {
   border: 0px solid #ddd;
   padding: 65px 0px 0px 0px;
-  width: 568px;
-  height: 320px;
+  width: 720px;
+  height: 405px;
+}
+
+@media (max-width: 795px) {
+  iframe {
+    width: 630px;
+    height: 355px;
+  }
 }
 
 @media (max-width: 700px) {
   iframe {
     padding: 65px 0px 0px 0px;
-    width: 320px;
-    height: 180px;
+    width: 400px;
+    height: 225px;
   }
   #title {
     text-align: center;
@@ -198,7 +211,7 @@ iframe {
   }
 
   .about {
-    text-align: center;
+    text-align: justify;
     max-width: 400px;
     padding: 65px 0px 0px 0px;
   }
