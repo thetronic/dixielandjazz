@@ -67,10 +67,6 @@ body {
   white-space: nowrap;
 }
 
-#address > a > div > b {
-  color: #ffc536;
-}
-
 hr {
   border: 1px solid #ddd;
   margin: 40px;
@@ -79,7 +75,7 @@ hr {
 .eventHeading {
   font-size: 30px;
   text-align: center;
-  margin: 80px 0px 10px 0px;
+  margin: 65px 0px 10px 0px;
 }
 
 .event {
@@ -103,7 +99,7 @@ hr {
   font-weight: bold;
   text-align: center;
   margin-bottom: 5px;
-  color: #ffc536; /*#f07818 #fc9e03 #facc2e #e69138 #27ae60 #4db6ac #3498db #2ecc71 #9b59b6*/
+  color: #ffc536;
 }
 
 .eventFooter {
@@ -112,13 +108,46 @@ hr {
   margin: 10px;
 }
 
-.eventFooter > b {
+b {
   color: #ffc536;
 }
 
 a {
   color: inherit;
   text-decoration: inherit;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  font-size: 20px;
+  margin: 65px 40px 0px 40px;
+}
+
+.about {
+  max-width: 400px;
+  margin: 0px 0px 80px 0px;
+}
+
+.musicians {
+  max-width: fit-content;
+  min-width: fit-content;
+  padding: 0px 20px 0px 0px;
+}
+
+.performer {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #ffc536;
+}
+.instrument {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
 }
 
 .iframeContainer {
@@ -130,14 +159,14 @@ a {
 
 iframe {
   border: 0px solid #ddd;
-  padding: 80px 0px 80px 0px;
+  padding: 65px 0px 0px 0px;
   width: 568px;
   height: 320px;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 700px) {
   iframe {
-    padding: 80px 0px 80px 0px;
+    padding: 65px 0px 0px 0px;
     width: 320px;
     height: 180px;
   }
@@ -158,5 +187,25 @@ iframe {
     background-image: url('../images/esrk2.jpg');
     background-size: cover;
     background-position: center;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 65px 40px 0px 40px;
+  }
+
+  .about {
+    text-align: center;
+    max-width: 400px;
+    padding: 65px 0px 0px 0px;
+  }
+  .musicians {
+    max-width: fit-content;
+    min-width: fit-content;
+    text-align: center;
+    padding: 0px 20px 0px 0px;
   }
 }
