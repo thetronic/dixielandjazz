@@ -24,12 +24,11 @@ body {
   padding: 0px;
 }
 
-#title {
+h1 {
   text-align: center;
-  font-size: 80px;
+  font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 5px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   margin: 20px 0px 30px 0px;
 }
 
@@ -43,19 +42,31 @@ body {
   font-weight: bold;
   font-size: 120px;
   line-height: 0.8;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-#bandImage {
+.oxford {
+  letter-spacing: 36px;
+  text-indent: 40px; /* This is to fix the alignment issue.*/
+  font-size: 30px;
+  font-weight: normal;
+  width: 100%;
+  height: 100%;
   text-align: center;
-  font-size: 14px;
-  line-height: 1.2;
+  margin: 10px 0px 10px 0px;
+  padding: 0px;
+}
+
+.bandImage {
+  overflow: hidden;
   height: 400px;
+  align-items: bottom;
   margin-top: 15px;
-  color: #262626;
-  background-image: url('../images/esrk2.jpg');
-  background-size: cover;
-  background-position: center;
+}
+
+.bandImage > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 #address {
@@ -77,7 +88,7 @@ hr {
   margin: 40px;
 }
 
-.eventHeading {
+h2 {
   font-size: 30px;
   text-align: center;
   margin: 65px 0px 10px 0px;
@@ -183,23 +194,19 @@ iframe {
     width: 400px;
     height: 225px;
   }
-  #title {
+
+  h1 {
     text-align: center;
     font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 5px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
-  #bandImage {
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.2;
+
+  .bandImage {
+    overflow: hidden;
     height: 250px;
+    align-items: bottom;
     margin-top: 15px;
-    color: #262626;
-    background-image: url('../images/esrk2.jpg');
-    background-size: cover;
-    background-position: center;
   }
 
   .info {
