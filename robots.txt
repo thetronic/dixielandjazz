@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /index-original.html
+Disallow: /fonts/
