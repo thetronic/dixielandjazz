@@ -139,7 +139,9 @@ function createEventSchema(event) {
     image: 'http://www.dixieland.co.uk/images/esrk.jpg',
     description: event['description'],
     startDate: convertDateTime(event['time'], event['date']),
-    endDate: '',
+    endDate: convertDateTime('10:00', event['date']),
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    eventStatus: 'https://schema.org/EventScheduled',
     performer: {
       '@type': 'Organization',
       name: event['name'],
@@ -156,6 +158,11 @@ function createEventSchema(event) {
         postalCode: 'OX41SJ',
         addressCountry: 'UK',
       },
+    },
+    organizer: {
+      '@type': 'Organization',
+      name: 'Eastside Rhythm Kings',
+      url: 'http://www.dixieland.co.uk',
     },
   }
 
